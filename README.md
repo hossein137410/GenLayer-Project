@@ -29,6 +29,7 @@ class VotingContract:
         return self.proposals.get(proposal_id, "Not found")
 ⚙️ 2. Backend (GenLayer interaction layer)
 backend/app.py
+
 from flask import Flask, request, jsonify
 from contracts.voting_contract import VotingContract
 
@@ -59,8 +60,13 @@ def result(proposal_id):
 
 if __name__ == "__main__":
     app.run(debug=True)
+if __name__ == "__main__":
+    app.run(debug=True)
+
+    
 🌐 3. Frontend (Simple Web UI)
 frontend/index.html
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -120,8 +126,11 @@ async function getResult() {
 
 </body>
 </html>
+
+
 📦 4. Requirements
 requirements.txt
+
 flask==3.0.0
 📄 5. README (IMPORTANT FOR GENLAYER POINTS)
 README.md
